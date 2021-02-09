@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>CS 270. Combinatorial Algorithms and Data Structures, Spring 2021</title>
+</head>
+<body>
+<div id="layout-content">
+<div id="toptitle">
+<h1>CS 270. Combinatorial Algorithms and Data Structures, Spring 2021</h1>
+</div>
+<p><b>Lecture:</b>  Monday/Wednesday 5:00-6:30pm <br />
+<b>Instructor:</b> Prasad Raghavendra<br />
+Office hours:  Tuesday 2:30-3:30pm (zoom link in piazza)<br />
+<b>TA:</b> Emaan Hariri <br />
+Office hours: TBD<br /></p>
+<h3>Tentative Plan</h3>
+<ul>
+<li><p>Continuous Optimization (5 lectures)</p>
+<ul>
+<li><p>Gradient Descent, </p>
+</li>
+<li><p>Mirror Descent,Multiplicative weights</p>
+</li>
+<li><p>Regret minimization, online convex optimization.</p>
+</li>
+<li><p>Ellipsoid Algorithm</p>
+<ul>
+<li><p>Application:  Solving LPs via multiplicative weights</p>
+</li>
+</ul>
+
+</li>
+</ul>
+
+</li>
+</ul>
+<ul>
+<li><p>Linear algebraic primitives (4 lectures)</p>
+<ul>
+<li><p>PCA, Power iteration</p>
+</li>
+<li><p>Tensors, power iteration, Jenrich's algorithm, Applications.</p>
+</li>
+</ul>
+
+</li>
+</ul>
+<ul>
+<li><p>Embeddings:	 (3 lectures)</p>
+<ul>
+<li><p>Dimension reduction, Johnson-Lindenstrauss</p>
+</li>
+<li><p>Locality Sensitive Hashing, Nearest Neighbor Search</p>
+</li>
+<li><p>Low stretch spanning trees.</p>
+</li>
+</ul>
+
+</li>
+</ul>
+<ul>
+<li><p>Spectral Graph Theory (3 lectures)</p>
+<ul>
+<li><p>Cheeger's inequality</p>
+</li>
+<li><p>Mixing of Markov chains</p>
+</li>
+<li><p>Electrical Flows</p>
+<ul>
+<li><p>Application:  Laplacian Solvers</p>
+</li>
+</ul>
+
+</li>
+</ul>
+
+</li>
+</ul>
+<ul>
+<li><p>Semidefinite Programming:   (4 lectures)</p>
+<ul>
+<li><p>MaxCut</p>
+</li>
+<li><p>Matrix multiplicative weights</p>
+</li>
+<li><p>Sum of Squares SDPs:  Proofs to Algorithms </p>
+<ul>
+<li><p>Robust Linear Regression</p>
+</li>
+</ul>
+
+</li>
+</ul>
+
+</li>
+</ul>
+<ul>
+<li><p>Differential Privacy (1 lecture)</p>
+</li>
+</ul>
+<ul>
+<li><p>Other topics?</p>
+<ul>
+<li><p>Interior point methods</p>
+</li>
+<li><p>Near-linear time Max Flow</p>
+</li>
+<li><p>Compressed sensing</p>
+</li>
+<li><p>Robust and heavy-tailed Statistics</p>
+</li>
+<li><p>Sparsest cut</p>
+</li>
+<li><p>Iterative rounding of linear programs</p>
+</li>
+<li><p>Primal-dual algorithms</p>
+</li>
+</ul>
+
+</li>
+</ul>
+<h3>Lectures</h3>
+<table id="lectures">
+<tr class="r1"><td class="c1">Date  </td><td class="c2"> Lecture     </td><td class="c3">Suggested Reading  </td><td class="c4"> Scribe notes  </td></tr>
+<tr class="r2"><td class="c1">1/20  </td><td class="c2"> Gradient Descent and its variants  </td><td class="c3"> section 2.1-2.6 in <a href="https://convex-optimization.github.io/ACO-v1.pdf">book</a> by Nisheeth Vishnoi for mathematical preliminaries.  <br /> <a href="http://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15850-f20/www/notes/lec18.pdf">Notes from Anupam Gupta</a> </td><td class="c4">       </td></tr>
+<tr class="r3"><td class="c1">1/25 </td><td class="c2">  Mirror Descent and multiplicative weights   </td><td class="c3"> Proof of projected gradient descent (Theorem 3.2 in <a href="https://arxiv.org/pdf/1405.4980.pdf">Bubeck's book</a>) <br /> <a href="http://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15850-f20/www/notes/lec19.pdf">Notes from Anupam Gupta</a>  </td><td class="c2">    </td></tr>
+<tr class="r5"><td class="c1">1/27    </td><td class="c2">   </td><td class="c3">    </td><td class="c4">     </td></tr>
+<tr class="r6"><td class="c1">2/1   </td><td class="c2"> Mirror Descent, Online Convex Optimization  </td><td class="c3">   Proof of Mirror descent (Theorem 4.2 in <a href="https://arxiv.org/pdf/1405.4980.pdf">Bubeck's book</a>)  <br /> <a href="http://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15850-f20/www/notes/lec19.pdf">Notes from Anupam Gupta</a> <br /> <a href="https://convex-optimization.github.io/ACO-v1.pdf">Chapter 7,Vishnoi's book</a></td><td class="c4">    </td></tr>
+<tr class="r7"><td class="c1">2/3    </td><td class="c2"> Centroid and Ellipsoid Algorithm  </td><td class="c3"> <a href="http://www.cs.cmu.edu/~15850/notes/lec20.pdf">Notes from Anupam Gupta</a>    </td><td class="c4">     </td></tr>
+<tr class="r8"><td class="c1"> 2/8    </td><td class="c2"> Solving linear systems, Preconditioninng, PCA, SVD, Power method   </td><td class="c3">  Chapter 3 in <a href="https://www.cs.cornell.edu/jeh/book.pdf">Blum-Hopcroft-Kannan</a><br />  Chap 15 in <a href="https://www.cs.yale.edu/homes/vishnoi/Lxb-Web.pdf">Vishnoi's book</a>  <br />   </td><td class="c4">    </td></tr>
+<tr class="r9"><td class="c1">2/10   </td><td class="c2"> Application of PCA: Gaussian Mixtures, Robust mean estimation  </td><td class="c3">  Chapter 3 in <a href="https://www.cs.cornell.edu/jeh/book.pdf">Blum-Hopcroft-Kannan</a><br />  Section 2.1,2.2,2.3 in <a href="https://arxiv.org/pdf/1911.05911.pdf">survey by Diakonikolas-Kane</a>    </td><td class="c4">     </td></tr>
+<tr class="r10"><td class="c1">2/15   </td><td class="c2">  President's Day  </td><td class="c3">     </td><td class="c4">  </td></tr>
+<tr class="r11"><td class="c1">2/17   </td><td class="c2">              </td><td class="c3">    </td><td class="c4">        </td></tr>
+<tr class="r12"><td class="c1">2/22   </td><td class="c2">        </td><td class="c3">    </td><td class="c4">              </td></tr>
+<tr class="r13"><td class="c1">2/24   </td><td class="c2">         </td><td class="c3">    </td><td class="c4">              </td></tr>
+<tr class="r14"><td class="c1">3/1    </td><td class="c2">          </td><td class="c3">    </td><td class="c4">           </td></tr>
+<tr class="r15"><td class="c1">3/3    </td><td class="c2">        </td><td class="c3">    </td><td class="c4">              </td></tr>
+<tr class="r16"><td class="c1">3/8    </td><td class="c2">         </td><td class="c3">    </td><td class="c4">              </td></tr>
+<tr class="r17"><td class="c1">3/10   </td><td class="c2">          </td><td class="c3">    </td><td class="c4">             </td></tr>
+<tr class="r18"><td class="c1">3/15   </td><td class="c2">          </td><td class="c3">    </td><td class="c4">    </td></tr>
+<tr class="r19"><td class="c1">3/17   </td><td class="c2">          </td><td class="c3">    </td><td class="c4">    </td></tr>
+<tr class="r20"><td class="c1">3/22   </td><td class="c2"> Spring Break           </td><td class="c3">   </td><td class="c4">   </td></tr>
+<tr class="r21"><td class="c1">3/24   </td><td class="c2"> Spring Break            </td><td class="c3">  </td><td class="c4">   </td></tr>
+<tr class="r22"><td class="c1">3/29   </td><td class="c2">          </td><td class="c3">      </td><td class="c4">  </td></tr>
+<tr class="r23"><td class="c1">3/31   </td><td class="c2">          </td><td class="c3">      </td><td class="c4">  </td></tr>
+<tr class="r24"><td class="c1">4/5    </td><td class="c2">          </td><td class="c3">      </td><td class="c4">  </td></tr>
+<tr class="r25"><td class="c1">4/7    </td><td class="c2">          </td><td class="c3">      </td><td class="c4">  </td></tr>
+<tr class="r26"><td class="c1">4/12   </td><td class="c2">          </td><td class="c3">      </td><td class="c4">  </td></tr>
+<tr class="r27"><td class="c1">4/14   </td><td class="c2">          </td><td class="c3">      </td><td class="c4">  </td></tr>
+<tr class="r28"><td class="c1">4/19   </td><td class="c2">           </td><td class="c3">      </td><td class="c4">  </td></tr>
+<tr class="r29"><td class="c1">4/21   </td><td class="c2">          </td><td class="c3">       </td><td class="c4">  </td></tr>
+<tr class="r30"><td class="c1">4/26   </td><td class="c2">           </td><td class="c3">      </td><td class="c4">   </td></tr>
+<tr class="r31"><td class="c1">4/28   </td><td class="c2">          </td><td class="c3">       </td><td class="c4">   </td></tr>
+<tr class="r32"><td class="c1">
+</td></tr></table>
+<h4>Assessment: </h4>
+<ul>
+<li><p>Regular bi-weekly homeworks (collaboration allowed):   35%</p>
+</li>
+<li><p>1 take-home final (collaboration prohibited):  25%</p>
+</li>
+<li><p>Scribe 1 lecture: 10%</p>
+</li>
+<li><p>Project: In groups of 2 or 3, write a survey on an area of active research : 30%</p>
+</li>
+</ul>
+<div id="footer">
+<div id="footer-text">
+Page generated 2021-02-08 23:05:52 Pacific Standard Time, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+</div>
+</div>
+</div>
+</body>
+</html>
